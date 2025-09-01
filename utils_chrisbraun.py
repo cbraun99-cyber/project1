@@ -56,25 +56,25 @@ logger.info("Logger loaded.")
 is_accepting_clients: bool = True
 offers_remote_workshops: bool = True
 
-# TODO: Declare and initialize a new boolean variable (e.g. `is_hiring` and set it to False)
 
+is_hiring: bool = False
 # ----------------------------------
 # Define Integer variables
 # ----------------------------------
 current_year: int = 2025
 year_started: int = 2020
 
-# TODO: Declare and initialize a new integer variable (e.g. `number_of_employees` and set it to 25)
 
+number_of_employees: int = 25
 # ----------------------------------
 # Define String variables
 # ----------------------------------
-author: str = "Chris Braun"  # TODO: change to your name
-organization: str = "Stellar Analytics"  # TODO: change the org name
-motto: str = "Clear. Useful. On time."  # TODO: change the motto
+author: str = "Chris Braun"  
+organization: str = "Braun Data Concepts"  
+motto: str = "Precise. Timely. Useful."  
 
-# TODO: Declare and initialize a new string variable (e.g. `location` and set it to your city and state)
 
+location: str = "Humphrey, Nebraska"
 # ----------------------------------
 # Define List variables
 # ----------------------------------
@@ -85,9 +85,8 @@ services: list[str] = ["Data Analysis", "Machine Learning", "Business Intelligen
 satisfaction_scores: list[float] = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 
-# TODO: Declare and initialize a new list variable (e.g. `office_locations` and set it to 3-5 cities where your org has offices)
-# TODO: Wrap each string in quotes and separate each item with a comma.
 
+office_locations: list[str] = ["Humphrey, NE", "Norfolk, NE", "Columbus, NE"]
 # ----------------------------------
 # Use built-in Python operators (such as - + * /)
 # and built-in Python functions (such as min, max, len, upper, lower, etc.)
@@ -98,8 +97,8 @@ max_score: float = max(satisfaction_scores)
 count_of_services: int = len(services)
 count_of_scores: int = len(satisfaction_scores)
 
-# TODO: Declare and initialize a new calculated variable (e.g. `count_of_locations` that uses the len() function on your list of office locations)
 
+count_of_locations: int = len(office_locations)
 
 # ----------------------------------
 # Use the built-in statistics module functions (such as mean, stdev, etc.)
@@ -118,6 +117,10 @@ Author:                     {author}
 Motto:                      {motto}
 Years Active:               {years_active}
 Accepting New Clients?:     {is_accepting_clients}
+Is Hiring?                  {is_hiring}
+Number of Employees         {number_of_employees}
+Number of Offices?          {count_of_locations}
+Office Locations?           {office_locations}
 Remote Workshops?:          {offers_remote_workshops}
 Services:                   {services}
 Client Satisfaction Scores: {satisfaction_scores}
@@ -128,7 +131,7 @@ Mean Satisfaction Score:    {mean_score:.2f}
 **********************************************************
 """
 
-# TODO: Modify the byline f-string to display your new variables as well. Use curly braces {} to embed each variable.
+
 
 #####################################
 # Define Global Functions
